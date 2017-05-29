@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+    
+    <title></title>
+    <meta name="generator" content="Hugo 0.20.7" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    
+    <meta name="description" content="A lightweight FreeBSD distribution using the Arch&#39;s pacman package manager">
+    
+    <link rel="icon" href="https://pacbsd.org/favicon.ico">
+    <link rel="apple-touch-icon" href="https://pacbsd.org/apple-touch-icon.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="https://pacbsd.org/apple-touch-icon-144x144.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="https://pacbsd.org/apple-touch-icon-152x152.png" />
+    <link rel="icon" type="image/png" href="https://pacbsd.org/favicon-32x32.png" sizes="32x32" />
+    <link rel="icon" type="image/png" href="https://pacbsd.org/favicon-16x16.png" sizes="16x16" />
+    <meta name="application-name" content="PacBSD" />
+    <meta name="msapplication-TileColor" content="#FFFFFF" />
+    <meta name="msapplication-TileImage" content="https://pacbsd.org/mstile-144x144.png" />
+    <link rel="stylesheet" href="https://pacbsd.org/css/style.css">
+    <link rel="stylesheet" href="https://pacbsd.org/css/monokai.css">
+    <link rel="stylesheet" href="https://pacbsd.org/fancybox/jquery.fancybox.css">
+    <link rel="stylesheet" href="https://pacbsd.org/font/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pacbsd.org/font/icomoon/css/icomoon.css">
+    <link rel="stylesheet" href="https://pacbsd.org/css/font.css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
+    <meta property="og:title" content="" />
+<meta property="og:description" content=" Mirror Overview    Server Country Tier ISOs Protocols Last Sync      packages.pacbsd.org   United States   Tier 1   Yes   https, rsync   &dash;&dash;     " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://pacbsd.org/mirrors/" />
+
+
+
+<meta property="article:published_time" content="2016-10-10T22:52:14-04:00"/>
+<meta property="article:modified_time" content="2016-10-10T22:52:14-04:00"/>
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+<meta itemprop="name" content="">
+<meta itemprop="description" content=" Mirror Overview    Server Country Tier ISOs Protocols Last Sync      packages.pacbsd.org   United States   Tier 1   Yes   https, rsync   &dash;&dash;     ">
+
+
+<meta itemprop="dateModified" content="2016-10-10T22:52:14-04:00" />
+<meta itemprop="wordCount" content="18">
+
+
+
+<meta itemprop="keywords" content="news,package-update,intervention-required,manual-package-update,new-iso,package-update,server-migration,site-updates,testing-needed," />
+
+    
+
+  <meta name="twitter:card" content="summary"/>
+
+
+
+<meta name="twitter:text:title" content=""/>
+<meta name="twitter:title" content=""/>
+<meta name="twitter:description" content=" Mirror Overview    Server Country Tier ISOs Protocols Last Sync      packages.pacbsd.org   United States   Tier 1   Yes   https, rsync   &dash;&dash;     "/>
+
+
+    <script src="https://pacbsd.org/bower_components/jquery/dist/jquery-2.2.0.min.js "></script>
+    
+    <script src="https://pacbsd.org/fancybox/jquery.fancybox.pack.js"></script>
+    <script src="https://pacbsd.org/js/script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/8.8.0/highlight.min.js"></script>
+    <script>hljs.initHighlightingOnLoad();</script>
+
+    
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      tex2jax: {
+        inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+
+    
+    <script src="https://pacbsd.org/js/jquery.hotkeys.js "></script>
+
+    
+    <link rel="stylesheet" href="https://pacbsd.org/bower_components/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://pacbsd.org/bower_components/bootstrap/css/dropdowns-enhancement.css">
+    <script src="https://pacbsd.org/bower_components/bootstrap/js/bootstrap.min.js"></script>
+    <script src="https://pacbsd.org/bower_components/bootstrap/js/dropdowns-enhancement.js"></script>
+    <link rel="stylesheet" href="https://pacbsd.org/css/bootstrap.css">
+
+    
+    <link href="https://pacbsd.org/bower_components/talaria/dist/talaria.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="https://pacbsd.org/bower_components/bluebird/js/browser/bluebird.js"></script>
+    <script type="text/javascript" src="https://pacbsd.org/bower_components/talaria/dist/talaria.js"></script>
+
+    
+    
+
+</head>
+<body>
+<div class="container">
+
+<header id="header">
+  <div id="header-main" class="header-inner">
+    <div class="outer">
+
+	<nav class="navbar navbar-default">
+	  <div class="container-fluid">
+
+    	    <div class="navbar-header">
+      		<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      		  <span class="sr-only">Toggle navigation</span>
+      		  <span class="icon-bar"></span>
+      		  <span class="icon-bar"></span>
+      		  <span class="icon-bar"></span>
+      		</button>
+		    <h1>
+			    <a class="navbar-brand" href="https://pacbsd.org/">
+            <img alt="PacBSD logo" src="/banners/pacBSD-logo.png" />
+			    </a>
+		    </h1>
+	    </div>
+
+
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+    
+        <li><a href="/">Home</a></li>
+        <li><a href="https://packages.pacbsd.org">Packages</a></li>
+        <li><a href="https://bbs.pacbsd.org">Forums</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Wiki<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/about">About PacBSD</a></li>
+            <li role="separator" class="divider"></li>
+            <li class="dropdown-submenu">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Application</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">List Application</a></li>
+                    <li role="separator" class="divider"></li>
+              <li><a href="#">Accessibility</a></li>
+              <li><a href="#">Application launchers</a></li>
+              <li class="dropdown-submenu">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Command shells</a>
+              <ul class="dropdown-menu">
+                <li class="dropdown-submenu">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Bash</a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Invocation</a></li>
+                  <li><a href="#">Command line</a></li>
+                </ul>
+                </li>
+              </ul>
+              </li>
+            </ul>
+            </li>
+            <li><a href="https://wiki.pacbsd.org/index.php/DeveloperWiki">Development</a></li>
+            <li><a href="https://wiki.pacbsd.org/index.php/Hardware_Compatibility_List">Hardware</a></li>
+            <li><a href="#">Networking</a></li>
+            <li><a href="#">System administration</a></li>
+            <li role="separator" class="divider"></li>
+            <li><a href="https://wiki.pacbsd.org">PacBSD Wiki</a></li>
+          </ul>
+        </li>
+        <li><a href="https://github.com/PacBSD/abs/issues" target="_blank" rel="nofollow">Bugs</a></li>
+        <li><a href="#">PUR</a></li>
+
+    
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+</header>
+
+
+<div id="container">
+   <div class="outer">
+    <section id="main">
+    <article>
+        <div class="article-inner">
+            
+
+            <header class="article-header">
+    <a href="https://pacbsd.org/mirrors/" class="permalink">
+    <h1 class="article-title" itemprop="name">
+        
+    </h1>
+    </a>
+</header>
+
+            <div class="article-entry" itemprop="articleBody">
+                
+
+<h2 id="mirror-overview">Mirror Overview</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Server</th>
+      <th>Country</th>
+      <th>Tier</th>
+      <th>ISOs</th>
+      <th>Protocols</th>
+      <th>Last Sync</th>
+    </tr>
+  </thead>
+  <tbody>
+    
+    
+    
+    <tr>
+      <td>
+        <a href="https://packages.pacbsd.org" target="_blank" rel="nofollow">packages.pacbsd.org</a>
+      </td>
+      <td>
+        United States
+      </td>
+      <td>
+        Tier 1
+      </td>
+      <td>
+        Yes
+      </td>
+      <td>
+        https, rsync
+      </td>
+      <td>
+        
+        &dash;&dash;
+        
+      </td>
+    </tr>
+    
+    
+  </tbody>
+</table>
+
+
+            </div>
+        </div>
+    </article>
+</section>
+
+    <aside id="sidebar">
+    <div class="widget-wrap">
+  <div class="widget-download">
+    <div class="btn-group">
+      <a href="/download">
+        <button type="button" class="btn btn-default" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cloud-download"></i> Download</button>
+      </a>
+    </div>
+    <div class="btn-group">
+      <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <i class="fa fa-question-circle"></i> Help <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="https://wiki.pacbsd.org/index.php/Official_PacBSD_Install_Guide">Installation guide</a></li>
+        <li><a href="https://wiki.pacbsd.org/index.php/FAQ">FAQ</a></li>
+        <li role="separator" class="divider"></li>
+        <li><a href="/download">Download</a></li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+
+    <div class="widget-wrap">
+  <div class="widget">
+    <h3 class="widget-title">
+      Documentation
+    </h3>
+    <ul class="category-list">
+      <li class="category-list-item">
+      <a href="https://wiki.pacbsd.org">Wiki</a>
+	    </li>
+      <li class="category-list-item">
+      <a href="https://wiki.pacbsd.org/index.php/Official_PacBSD_Install_Guide">Installation Guide</a>
+	    </li>
+      <li class="category-list-item">
+      <a href="https://wiki.pacbsd.org/index.php/Post_Installation_Recommendations">Post Installation Recommendations</a>
+	    </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="widget-wrap">
+  <div class="widget">
+    <h3 class="widget-title">
+      Community
+    </h3>
+    <ul class="category-list">
+      <li class="category-list-item">
+        <a href="/mailing_list/">Mailing List</a>
+      </li>
+      <li class="category-list-item">
+        <a href="https://wiki.pacbsd.org/index.php/IRC_channels">IRC Channels</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="widget-wrap">
+  <div class="widget">
+    <h3 class="widget-title">
+      Tools
+    </h3>
+    <ul class="category-list">
+      <li class="category-list-item">
+        <a href="https://raw.githubusercontent.com/PacBSD/abs/master/core/pacman-mirrorlist/mirrorlist" target="_blank" rel="nofollow">Mirrorlist Updater</a>
+      </li>
+      <li class="category-list-item">
+        <a href="/mirrors">Mirror List</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="widget-wrap">
+  <div class="widget">
+    <h3 class="widget-title">
+      Development
+    </h3>
+    <ul class="category-list">
+      <li class="category-list-item">
+        <a href="https://github.com/pacbsd">Projects in Git</a>
+      </li>
+      <li class="category-list-item">
+        <a href="https://wiki.pacbsd.org/index.php?title=DeveloperWiki">Developer Wiki</a>
+      </li>
+      <li class="category-list-item">
+        <a href="/todo">Todo Lists</a>
+      </li>
+      <li class="category-list-item">
+        <a href="#">ISO Release List</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    <div class="widget-wrap">
+  <div class="widget">
+    <h3 class="widget-title">
+      People
+    </h3>
+    <ul class="category-list">
+      <li class="category-list-item">
+      <a href="#">Developers</a>
+      </li>
+      <li class="category-list-item">
+      <a href="#">Trusted Users</a>
+      </li>
+      <li class="category-list-item">
+      <a href="#">Support Staff</a>
+      </li>
+      <li class="category-list-item">
+      <a href="#">Developer Fellows</a>
+      </li>
+      <li class="category-list-item">
+      <a href="#">Trusted User Fellows</a>
+      </li>
+      <li class="category-list-item">
+      <a href="#">Signing Master Keys</a>
+      </li>
+    </ul>
+  </div>
+</div>
+
+    
+
+<div class="widget-wrap">
+    <div class="widget">
+        <ul id="recent-post">
+		<li id="first-recent"><a href="sitemap.xml" id="firstmove" class="move"><h3 class="widget-title">
+			Latest News
+					
+    </h3></a></li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2017/05/16/openrc-0.26.2-in-testing/" class="move">OpenRC 0.26.2 in [testing]</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2017/04/25/pac-wiki-update/" class="move">Pac Wiki Update</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2016/10/15/package-signing-key-update/" class="move">Package Signing Key Update</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2016/09/07/migrating-to-a-new-server-and-new-website/" class="move">Migrating to a New Server and New Website</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2016/07/21/new-iso-available/" class="move">New ISO Available</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2014/09/14/2-years-of-archbsd/" class="move">2 Years of ArchBSD</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2013/02/22/iso-now-available-for-testers/" class="move">ISO Now Available for Testers</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2013/01/24/site-still-under-construction/" class="move">Site Still Under Construction</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/news/2013/01/21/archbsd/" class="move">ArchBSD</a>
+
+            </li>
+            
+	    <li>
+		    
+		<a href="https://pacbsd.org/post/" class="move">Posts</a>
+
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    
+
+<div class="widget-wrap">
+    <h3 class="widget-title">Categories</h3>
+    <div class="widget">
+        <ul class="category-list">
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://pacbsd.org/categories/news">
+                    news
+                </a>
+                <span class="category-list-count">9</span>
+            </li>
+            
+            <li class="category-list-item">
+                <a class="category-list-link" href="https://pacbsd.org/categories/package-update">
+                    package-update
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+        </ul>
+    </div>
+</div>
+
+
+
+    
+
+<div class="widget-wrap">
+    <h3 class="widget-title">
+	    Tag cloud
+    </h3>
+    <div class="widget tagcloud">
+        
+        <a href="https://pacbsd.org/tags/intervention-required" style="font-size: 12px;">intervention-required</a>
+        
+        <a href="https://pacbsd.org/tags/manual-package-update" style="font-size: 12px;">manual-package-update</a>
+        
+        <a href="https://pacbsd.org/tags/new-iso" style="font-size: 12px;">new-iso</a>
+        
+        <a href="https://pacbsd.org/tags/package-update" style="font-size: 12px;">package-update</a>
+        
+        <a href="https://pacbsd.org/tags/server-migration" style="font-size: 12px;">server-migration</a>
+        
+        <a href="https://pacbsd.org/tags/site-updates" style="font-size: 12px;">site-updates</a>
+        
+        <a href="https://pacbsd.org/tags/testing-needed" style="font-size: 12px;">testing-needed</a>
+        
+    </div>
+</div>
+
+
+
+
+    
+</aside>
+
+  </div>
+</div>
+
+<footer id="footer">
+  <div class="outer">
+    <div class="sponsors">
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col-sm-12">
+              <h3>Hosting Sponsors</h3>
+            </div>
+            <div class="col-sm-6">
+              <p>
+              PacBSD is grateful to our hosting sponsors who help keep the ligts on and allow us to concentrate on development.
+              </p>
+            </div>
+            <div class="col-sm-6">
+              <ul class="list-unstyled">
+                <li>
+                  <a href="https://www.digitalocean.com/" target="_blank" rel="nofollow" title="Digital Ocean">
+                    <img src="/banners/DO_Logo_Horizontal_Black.png" class="img-responsive" alt="Digital Ocean Logo" />
+                  </a>
+                </li>
+              </ul>
+            </div>
+        </div>
+        <div class="col-sm-6">
+          &nbsp;
+        </div>
+      </div>
+    </div>
+    <div id="footer-info" class="inner">
+	    &copy; 2013-2017 Pacbsd Project <br>
+      All Rights Reserved<br />Powered by <a href="//gohugo.io">Hugo</a>. Theme by <a href="https://github.com/syui/hugo-theme-arch">hugo-theme-arch</a>.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
